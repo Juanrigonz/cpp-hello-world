@@ -8,20 +8,11 @@ components:
       memoryLimit: 1G
       mountSources: true
 commands:
-  - id: build
+    - id: maven-build
     exec:
-      label: "Build application"
       component: tools
-      workingDir: "${PROJECT_SOURCE}"
-      commandLine: g++ -g hello.cpp -o hello.out && echo "Build complete"
+      workingDir: ${PROJECT_SOURCE}
+      commandLine: mvn clean install
       group:
         kind: build
         isDefault: true
-  - id: run
-    exec:
-      label: "Run application"
-      component: tools
-      workingDir: "${PROJECT_SOURCE}"
-      commandLine: "./hello.out"
-      group:
-        kind: run
