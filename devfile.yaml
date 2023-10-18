@@ -9,10 +9,10 @@ components:
       mountSources: true
 commands:
     - id: maven-build
-    exec:
-      component: tools
-      workingDir: ${PROJECT_SOURCE}
-      commandLine: mvn clean install
-      group:
-        kind: build
-        isDefault: true
+      exec:
+        component: tools
+        workingDir: ${PROJECT_SOURCE}
+        commandLine: mvn clean install
+        group:
+          kind: build
+          isDefault: true
