@@ -25,3 +25,11 @@ commands:
       commandLine: "./hello.out"
       group:
         kind: run
+  - id: maven-build
+    exec:
+      component: tools
+      workingDir: ${PROJECT_SOURCE}
+      commandLine: mvn clean install
+      group:
+        kind: build
+        isDefault: true
