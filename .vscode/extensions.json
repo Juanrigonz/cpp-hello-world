@@ -3,6 +3,7 @@
     // for the documentation about the extensions.json format
     "recommendations": [
         "llvm-vs-code-extensions.vscode-clangd",
+        "redhat.java",
         "eclipse-cdt.cdt-gdb-vscode"
     ]
 }
