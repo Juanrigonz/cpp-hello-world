@@ -7,6 +7,12 @@ components:
       image: registry.redhat.io/devspaces/udi-rhel8@sha256:de81824e6ccf82a286a28566432d4f43928a989c570578c4b4df9484ef136cca
       memoryLimit: 1G
       mountSources: true
+      env:
+      - name: MAVEN_CONFIG
+        value: /home/user/.m2
+      volumeMounts:
+        - name: m2
+          path: /home/user/.m2
 commands:
     - id: maven-build
       exec:
