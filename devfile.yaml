@@ -16,6 +16,9 @@ components:
           
   - name: m2
     volume:
+      configMap:
+        name: settings-xml
+        defaultMode: 420
       size: 1G
       
 commands:
