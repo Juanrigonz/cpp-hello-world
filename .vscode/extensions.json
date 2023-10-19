@@ -5,7 +5,8 @@
         "llvm-vs-code-extensions.vscode-clangd",
         "redhat.java",
         "vscjava.vscode-java-debug",
-        "vscjava.vscode-java-test",
+        "vscjava.vscode-java-test",        
+        "vscjava.vscode-java-pack",
         "eclipse-cdt.cdt-gdb-vscode"
     ]
 }
