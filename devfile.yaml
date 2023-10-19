@@ -8,8 +8,8 @@ components:
       memoryLimit: 1G
       mountSources: true
       env:
-      - name: MAVEN_CONFIG
-        value: /home/user/.m2
+        - name: MAVEN_CONFIG
+          value: /home/user/.m2
       volumeMounts:
         - name: m2
           path: /home/user/.m2
