@@ -7,6 +7,7 @@
         "vscjava.vscode-java-debug",
         "vscjava.vscode-java-test",        
         "vscjava.vscode-java-pack",
+        "redhat.apache-camel-extension-pack",
         "eclipse-cdt.cdt-gdb-vscode"
     ]
 }
