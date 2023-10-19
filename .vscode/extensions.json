@@ -4,6 +4,8 @@
     "recommendations": [
         "llvm-vs-code-extensions.vscode-clangd",
         "redhat.java",
+        "vscjava.vscode-java-debug",
+        "vscjava.vscode-java-test",
         "eclipse-cdt.cdt-gdb-vscode"
     ]
 }
