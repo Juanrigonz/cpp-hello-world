@@ -4,7 +4,7 @@ metadata:
 components:
   - name: tools
     container:
-      image: registry.redhat.io/devspaces/udi-rhel8@sha256:de81824e6ccf82a286a28566432d4f43928a989c570578c4b4df9484ef136cca
+      image: registry.global.ccc.srvb.cl.paas.cloudcenter.corp/tools-chi/devspaces/udi-rhel8:3.8-30
       memoryLimit: 1G
       mountSources: true
       env:
