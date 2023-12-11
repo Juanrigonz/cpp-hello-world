@@ -12,12 +12,11 @@ components:
           value: /home/user/.m2
       volumeMounts:
         - name: m2
-          path: /home/user/.m2
-          
+          path: /home/user/.m2  
   - name: m2
     volume:
-      configMap:
-        name: settings-xml
+      Secret:
+        name: mvn-settings-secret
         defaultMode: 420
       size: 1G
       
