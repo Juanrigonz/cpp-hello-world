@@ -19,7 +19,6 @@ components:
         name: mvn-settings-secret
         defaultMode: 420
       size: 1G
-      
 commands:
     - id: maven-build
       exec:
