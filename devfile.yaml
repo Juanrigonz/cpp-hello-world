@@ -7,9 +7,6 @@ components:
       image: registry.global.ccc.srvb.cl.paas.cloudcenter.corp/tools-chi/devspaces/udi-rhel8:3.8-30
       memoryLimit: 1G
       mountSources: true
-      env:
-        - name: MAVEN_CONFIG
-          value: /home/user/.m2
 commands:
     - id: maven-build
       exec:
