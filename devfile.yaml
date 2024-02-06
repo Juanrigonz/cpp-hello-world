@@ -10,15 +10,6 @@ components:
       env:
         - name: MAVEN_CONFIG
           value: /home/user/.m2
-      volumeMounts:
-        - name: m2
-          path: /home/user/.m2  
-  - name: m2
-    volume:
-      Secret:
-        name: mvn-settings-secret
-        defaultMode: 420
-      size: 1G
 commands:
     - id: maven-build
       exec:
